@@ -2,6 +2,10 @@ body {
 	font-family: "Open Sans";
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Droid Serif";
+}
+
 .btn {
 	border-radius: 0;
 }
@@ -16,7 +20,7 @@ a {
 }
 
 hr {
-	border: 1px solid;
+	border-bottom: 1px solid #9D9D9D;
 }
 
 #resume {
@@ -29,11 +33,51 @@ hr {
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
+/****  HEADER  ****/
+
 .bio .name {
 	margin-top: 0;
-	font-family: "Droid Serif";
+}
+
+.bio .info,
+.bio .title {
+	font-family: "Open Sans";
 }
 
 .bio .info:first-child {
 	margin-top: 3px;
 }
+
+
+/****  BODY  ****/
+
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+	font-weight: 600;
+	margin-top: 0;
+}
+
+.main .title {
+	font-size: 1.5em;
+	color:  #39A5B7;
+}
+
+.main .skill,
+.main .desc {
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+.main .intense {
+	color: #C00000;
+}
+
+.main .skillsetTitle {
+	margin-bottom: .25em;
+}
+
+.main .skillset {
+	margin-bottom: .5em;
+}
+
+
+

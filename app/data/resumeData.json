@@ -12,7 +12,6 @@
       "personal": "+917709584604",
       "skype": "live:sandeshdamkondwar"
     },
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus asperiores, dolorum. Quasi repellat mollitia nisi voluptas, sit eligendi dolor accusamus recusandae officiis maxime quisquam inventore, ut, magni dolore unde distinctio dolores. Nisi sint omnis enim incidunt ad unde quos velit perferendis odit laudantium rerum, earum, non veritatis. At, consequatur, quod!!",
     "location": {
       "city": "Pune",
       "countryCode": "IN",
@@ -26,6 +25,17 @@
       "twitter": "http://twitter.com/sandydamy"
     }
   },
+  "objective": "To obtain a challenging and rewarding web developer position where I can utilize my knowledge, proficiency, and skills to contribute to a company's growth.",
+  "areaOfInterest": [{
+      "work": "Front End Web Development",
+      "intense": true
+    }, {
+      "work": "Web Designing",
+      "intense": true
+    }, {
+      "work": "Android Development",
+      "intense": false
+  }],
   "work": [{
     "startDate": "17 August 2012",
     "position": "Web Developer",
@@ -57,12 +67,33 @@
     "releaseDate": "2012-12-01",
     "website": "http://website.com"
   }],
-  "skills": [{
-    "name": "HTML 5",
-    "level": "Master"
+  "technicalSkills": [{
+    "title": "Programming Languages",
+    "skills": [{
+      "title": "JavaScript",
+      "intense": true
+    }, {
+      "title": "HTML5",
+      "intense": true
+    }, {
+      "title": "CSS3",
+      "intense": true
+    }, {
+      "title": "Python",
+      "intense": false
+    }, {
+      "title": "Java",
+      "intense": false
+    }]
   },{
-    "name": "CSS 3",
-    "level": "Master"
+    "title": "Version Control",
+    "skills": [{
+      "title": "Git"
+    }, {
+      "title": "Tortoise"
+    }, {
+      "title": "TFS"
+    }]
   }],
   "pdfLink": "https://www.dropbox.com/s/1pa0yt4zxohbze3/SandeshDamkondwar.pdf"
 }

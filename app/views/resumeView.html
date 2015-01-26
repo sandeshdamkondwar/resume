@@ -1,49 +1,84 @@
 <section id="resume">
     <header id="header">
-		<div class="row bio">
-			<div class="col-md-6 col-lg-8">
-				<h1 class="name">{{resume.bio.firstName}} {{resume.bio.lastName}}</h1>
-				<h4><span ng-repeat="title in resume.bio.title">{{title}}<strong>{{$last ? '' : ' &#8746; '}}</strong></span></h4>
-				<hr class="hidden-md hidden-lg">
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
-				<h5 class="info">
-					<i class="icon fa fa-map-marker"></i>
-					{{resume.bio.location.city}}, {{resume.bio.location.countryCode}}
-				</h5>
-				<h5 class="info">
-					<i class="icon fa fa-globe"></i>
-					<a href="{{resume.bio.websites.blog}}">Personal Blogs</a>
-				</h5>
-				<h5 class="info">
-					<i class="icon fa fa-github"></i>
-					<a href="{{resume.bio.profiles.github}}">Github</a>
-				</h5>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
-				<h5 class="info text-right">
-					<i class="icon fa fa-phone"></i>
-					<a href="{{'tel:' + resume.bio.contact.personal}}">{{resume.bio.contact.personal}}</a>
-				</h5>
-				<h5 class="info text-right">
-					<i class="icon fa fa-skype"></i>
-					<a ng-href="{{'skype:' + resume.bio.contact.skype}}">Skype me</a>
-				</h5>
-				<h5 class="info text-right">
-					<i class="icon fa fa-envelope-o"></i>
-					<a ng-href="{{'mailto:' + resume.bio.email.personal}}">Mail me</a>
-				</h5>
-			</div>
-		</div>
+        <div class="row bio">
+            <div class="col-md-6 col-lg-8">
+                <h1 class="name">{{resume.bio.firstName}} {{resume.bio.lastName}}</h1>
+                <h4 class="title"><span ng-repeat="title in resume.bio.title">{{title}}<strong>{{$last ? '' : ' &#8746; '}}</strong></span></h4>
+                <hr class="hidden-md hidden-lg">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                <h5 class="info">
+                    <i class="icon fa fa-map-marker"></i>
+                    {{resume.bio.location.city}}, {{resume.bio.location.countryCode}}
+                </h5>
+                <h5 class="info">
+                    <i class="icon fa fa-globe"></i>
+                    <a href="{{resume.bio.websites.blog}}">Personal Blogs</a>
+                </h5>
+                <h5 class="info">
+                    <i class="icon fa fa-github"></i>
+                    <a href="{{resume.bio.profiles.github}}">Github</a>
+                </h5>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                <h5 class="info text-right">
+                    <i class="icon fa fa-phone"></i>
+                    <a href="{{'tel:' + resume.bio.contact.personal}}">{{resume.bio.contact.personal}}</a>
+                </h5>
+                <h5 class="info text-right">
+                    <i class="icon fa fa-skype"></i>
+                    <a ng-href="{{'skype:' + resume.bio.contact.skype}}">Skype me</a>
+                </h5>
+                <h5 class="info text-right">
+                    <i class="icon fa fa-envelope-o"></i>
+                    <a ng-href="{{'mailto:' + resume.bio.email.personal}}">Mail me</a>
+                </h5>
+            </div>
+        </div>
     </header>
-	<hr>
-    <section id="main">
+    <hr>
+    <section class="main">
+        <div class="row objective">
+            <div class="col-md-3">
+                <h3 class="title">Objective</h3>
+            </div>
+            <div class="col-md-9">
+                <p class="desc">{{resume.objective}}</p>
+            </div>
+        </div>
 
+        <div class="row area-interest">
+            <div class="col-md-3">
+                <h3 class="title">Area of Interest</h3>
+            </div>
+            <div class="col-md-9">
+                <p class="desc">
+                    <span ng-repeat="interest in resume.areaOfInterest">
+                        <span ng-class="{ intense: interest.intense }">{{interest.work}}</span><span>{{$last ? '' : ', '}}</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="row technical-skills">
+            <div class="col-md-3">
+                <h3 class="title">Technical Skills</h3>
+            </div>
+            <div class="col-md-9">
+                <div ng-repeat="skillsSet in resume.technicalSkills">
+                    <h4 class="skillsetTitle">{{skillsSet.title}}</h4>
+                    <div class="skillset">
+                        <span ng-repeat="skill in skillsSet.skills" class="skill">
+                            <span ng-class="{ intense: skill.intense }">{{skill.title}}</span><span>{{$last ? '' : ', '}}</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <hr>
     <footer id="footer">
-		<p class="text-right">
-			<a class="btn btn-primary" ng-href="{{ resume.pdfLink + '?dl=1'}}"><span class="icon fa fa-download"></span>Download as PDF</a>
-		</p>
+        <p class="text-right">
+            <a class="btn btn-primary" ng-href="{{ resume.pdfLink + '?dl=1'}}"><span class="icon fa fa-download"></span>Download as PDF</a>
+        </p>
     </footer>
 </section>
