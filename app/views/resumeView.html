@@ -1,11 +1,12 @@
 <section id="resume">
     <header id="header">
 		<div class="row bio">
-			<div class="col-md-6">
+			<div class="col-md-6 col-lg-8">
 				<h1 class="name">{{resume.bio.firstName}} {{resume.bio.lastName}}</h1>
 				<h4><span ng-repeat="title in resume.bio.title">{{title}}<strong>{{$last ? '' : ' &#8746; '}}</strong></span></h4>
+				<hr class="hidden-md hidden-lg">
 			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6">
+			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
 				<h5 class="info">
 					<i class="icon fa fa-map-marker"></i>
 					{{resume.bio.location.city}}, {{resume.bio.location.countryCode}}
@@ -19,7 +20,7 @@
 					<a href="{{resume.bio.profiles.github}}">Github</a>
 				</h5>
 			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6">
+			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
 				<h5 class="info text-right">
 					<i class="icon fa fa-phone"></i>
 					<a href="{{'tel:' + resume.bio.contact.personal}}">{{resume.bio.contact.personal}}</a>
