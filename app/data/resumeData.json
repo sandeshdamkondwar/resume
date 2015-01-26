@@ -1,0 +1,65 @@
+{
+  "bio": {
+    "firstName": "Sandesh",
+    "lastName": "Damkondwar",
+    "email": {
+      "work": "sandesh@mquotient.net",
+      "personal": "sandeshdamkondwar@gmail.com"
+    },
+    "phone": {
+      "work": "(020) 123-45678",
+      "personal": "+91 7709584604"
+    },
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus asperiores, dolorum. Quasi repellat mollitia nisi voluptas, sit eligendi dolor accusamus recusandae officiis maxime quisquam inventore, ut, magni dolore unde distinctio dolores. Nisi sint omnis enim incidunt ad unde quos velit perferendis odit laudantium rerum, earum, non veritatis. At, consequatur, quod!!",
+    "location": {
+      "city": "Pune",
+      "countryCode": "IN",
+      "state": "MH"
+    },
+    "websites": {
+      "blog": "http://sandy.co.in"
+    },
+    "profiles": {
+      "github": "sandeshdamkondwar",
+      "twitter": "sandydamy"
+    }
+  },
+  "work": [{
+    "startDate": "17 August 2012",
+    "position": "Web Developer",
+    "company": "Reasoning",
+    "website": "http://ereasoning.com",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nihil aspernatur, odio sed sunt vel illo rerum quam ab alias!",
+    "highlights": [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, non.",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    ]
+  }],
+  "education": [{
+    "institution": "University of Pune",
+    "startDate": "2008",
+    "endDate": "2012",
+    "area": "Computer Science",
+    "studyType": "Bachelor of Engineering",
+    "courses": ["Course 1", "Course 2"]
+  }],
+  "awards": [{
+    "title": "Award 1",
+    "date": "2014-11-01",
+    "awarder": "Techcrunch"
+  }],
+  "publications": [{
+    "name": "pub1",
+    "publisher": "TechPub",
+    "releaseDate": "2012-12-01",
+    "website": "http://website.com"
+  }],
+  "skills": [{
+    "name": "HTML 5",
+    "level": "Master"
+  },{
+    "name": "CSS 3",
+    "level": "Master"
+  }]
+}
