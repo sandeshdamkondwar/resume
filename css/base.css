@@ -2,19 +2,27 @@ body {
 	font-family: "Open Sans";
 }
 
+.btn {
+	border-radius: 0;
+}
+
 a {
 	color: inherit;
 }
 
+.icon {
+	margin-right: 0.5em;
+	width: 1em;
+}
+
 hr {
-	border-top: 1px solid #9D9D9D;
-	border-bottom: 1px solid #FFF;
+	border: 1px solid;
 }
 
 #resume {
 	border: 1px solid #DDD;
 	padding: 1.5em;
-	background: #F5F5F5;
+	background: #FEFEFE;
 	color: #555;
 	margin: 1em auto;
 	border-bottom-width: 2px;
@@ -24,11 +32,6 @@ hr {
 .bio .name {
 	margin-top: 0;
 	font-family: "Droid Serif";
-}
-
-.bio .icon {
-	margin-right: 0.5em;
-	width: 1em;
 }
 
 .bio .info:first-child {
