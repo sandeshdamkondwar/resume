@@ -1,0 +1,36 @@
+body {
+	font-family: "Open Sans";
+}
+
+a {
+	color: inherit;
+}
+
+hr {
+	border-top: 1px solid #9D9D9D;
+	border-bottom: 1px solid #FFF;
+}
+
+#resume {
+	border: 1px solid #DDD;
+	padding: 1.5em;
+	background: #F5F5F5;
+	color: #555;
+	margin: 1em auto;
+	border-bottom-width: 2px;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.bio .name {
+	margin-top: 0;
+	font-family: "Droid Serif";
+}
+
+.bio .icon {
+	margin-right: 0.5em;
+	width: 1em;
+}
+
+.bio .info:first-child {
+	margin-top: 3px;
+}

@@ -1,7 +1,41 @@
 <section id="resume">
     <header id="header">
-		<h1>{{resume.bio.firstName}} {{resume.bio.lastName}}</h1>
+		<div class="row bio">
+			<div class="col-md-8">
+				<h1 class="name">{{resume.bio.firstName}} {{resume.bio.lastName}}</h1>
+				<h4><span ng-repeat="title in resume.bio.title">{{title}}<strong>{{$last ? '' : ' &#8746; '}}</strong></span></h4>
+			</div>
+			<div class="col-md-2">
+				<h5 class="info">
+					<i class="icon fa fa-map-marker"></i>
+					{{resume.bio.location.city}}, {{resume.bio.location.countryCode}}
+				</h5>
+				<h5 class="info">
+					<i class="icon fa fa-globe"></i>
+					<a href="{{resume.bio.websites.blog}}">Personal Blogs</a>
+				</h5>
+				<h5 class="info">
+					<i class="icon fa fa-github"></i>
+					<a href="{{resume.bio.profiles.github}}">Github</a>
+				</h5>
+			</div>
+			<div class="col-md-2">
+				<h5 class="info text-right">
+					<i class="icon fa fa-phone"></i>
+					<a href="{{'tel:' + resume.bio.contact.personal}}">{{resume.bio.contact.personal}}</a>
+				</h5>
+				<h5 class="info text-right">
+					<i class="icon fa fa-skype"></i>
+					<a ng-href="{{'skype:' + resume.bio.contact.skype}}">Skype me</a>
+				</h5>
+				<h5 class="info text-right">
+					<i class="icon fa fa-envelope-o"></i>
+					<a ng-href="{{'mailto:' + resume.bio.email.personal}}">Mail me</a>
+				</h5>
+			</div>
+		</div>
     </header>
+	<hr>
     <section id="main">
 
     </section>

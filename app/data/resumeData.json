@@ -2,13 +2,15 @@
   "bio": {
     "firstName": "Sandesh",
     "lastName": "Damkondwar",
+    "title": ["Front End Web Developer", "Web Designer"],
     "email": {
       "work": "sandesh@mquotient.net",
       "personal": "sandeshdamkondwar@gmail.com"
     },
-    "phone": {
+    "contact": {
       "work": "(020) 123-45678",
-      "personal": "+91 7709584604"
+      "personal": "+917709584604",
+      "skype": "live:sandeshdamkondwar"
     },
     "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus asperiores, dolorum. Quasi repellat mollitia nisi voluptas, sit eligendi dolor accusamus recusandae officiis maxime quisquam inventore, ut, magni dolore unde distinctio dolores. Nisi sint omnis enim incidunt ad unde quos velit perferendis odit laudantium rerum, earum, non veritatis. At, consequatur, quod!!",
     "location": {
@@ -20,8 +22,8 @@
       "blog": "http://sandy.co.in"
     },
     "profiles": {
-      "github": "sandeshdamkondwar",
-      "twitter": "sandydamy"
+      "github": "http://github.com/sandeshdamkondwar",
+      "twitter": "http://twitter.com/sandydamy"
     }
   },
   "work": [{
